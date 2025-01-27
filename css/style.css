@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'font';
+    src: url(../font/Montserrat-Medium.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'font', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.342)), url(../img/banner.jpg);
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.container{
+    padding: 1rem 7rem;
+    width: 100%;
+    height: 15%;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+}
+
+a{
+    color: white;
+    transition: all .3s;
+}
+a:hover{
+    color: red;
+    transition: all .3s;
+}
+
+.logo a img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+.nav-links{
+    width: 40%;
+}
+ul{
+    /* width: 60%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.ban-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+a.btn{
+    background-color: transparent;
+    padding: 1rem 3rem;
+    background-color: red;
+    border-radius: 0 10px 0 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a.btn:hover{
+    box-shadow: 1px 1px 12px #000;
+}
+
+p{
+    /* color: white; */
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* .ban-text a.btn::before{
+    content: "";
+    width: 200px;
+    height: 52px;
+    left: -200px;
+    top: 0;
+    transition: all .4s;
+    background-color: var(--dark);
+    position: absolute;
+} */
+
+.disp{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+.services{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 7rem;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.342)), url(../img/342389250_1881067065584535_430459689802042053_n.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: teal; */
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px #000;
+}
+
+h3{
+    color: white;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*====== about =====*/
+section.about{
+    width: 100%;
+    height: 90vh;
+}
+.about .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+
+}
+
+.about-text{
+    width: 40%;
+}
+.about-text a.btn{
+    display: inline-block;
+}
+.about img{
+    width: 40%;
+    height: 400px;
+}
+
+
+/*====== contact =====*/
+section.contact{
+    margin-bottom: 3rem;
+}
+
+section.contact .container_contact{
+    width: 100%;
+    height: 100%;
+    padding: 0 8rem;
+}
+.contact .all_contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact .referneces{
+    margin-top: 3rem;
+    width: 50%;
+}
+
+.contact .referneces a{
+    transition: all .4s;
+
+}
+
+.contact .referneces a:hover{
+    color: red;
+    transition: all .4s;
+}
+
+.contact .formulaire{
+    width: 90%;
+    margin-top: 3rem;
+}
+
+.contact .formulaire form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+.all_contact .references a{
+    color: black;
+}
+
+.all_contact .references i{
+    margin-right: 1rem;
+    /* margin-top: 3rem; */
+    font-size: 3rem;
+    color: red;
+}
+ 
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+
+input[type="submit"]{
+    width: 30%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.formulaire a{
+    width: 200px;
+    height: 60px;
+}
+
+
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+}
+
+footer img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
