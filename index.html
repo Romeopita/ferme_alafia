@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Ferme Alafia</title>
 </head>
-<body>
+<body onscroll="defil()">
     
 
     <header>
@@ -18,19 +19,21 @@
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
-                <nav class="nav-links">
-                    <ul>
+                <nav class="nav-links" id="nav">
+                    <ul id="ul">
+                        <a href="#" class="btn" id="icon"><i class="ri-menu-line"></i></a>
                         <li><a href="#">Accueil</a></li>
                         <li><a href="#abouts">À propos</a></li>
                         <li><a href="#service">Services</a></li>
                         <li><a href="#contacts">Contact</a></li>
                     </ul>
                 </nav>
+                <a href="#" class="btn" id="icons"><i class="ri-menu-line"></i></a>
             </div>
         </div>
 
         <div class="ban-text">
-            <h1 style="color: white;">Un cadre <span style="color: green;">naturel</span>, une expérience unique</h1>
+            <h1 style="color: white;">Ferme Allafia, Un cadre <span style="color: green;">naturel</span>, une expérience unique</h1>
             <p style="color: white;">Plongez dans un havre de paix, où nature et authenticité se rejoignent</p>
             <a href="#" class="btn">Contact</a>
         </div>
@@ -41,7 +44,7 @@
         <section class="about" id="abouts">
             <div class="container">
                 <div class="about-text">
-                    <h1>Ferme Alafia</h1>
+                    <h1>Ferme Allafia</h1>
                     <p>Fondée en 2021, La Ferme ALLAFIA est une ferme agropastorale à vocation sociale, offrant une expérience authentique dans un environnement 100% naturel. Idéale pour les séjours et activités de loisirs, elle permet à ses visiteurs de se reconnecter avec la nature tout en profitant de son minibar restaurant, où produits locaux et convivialité se rencontrent. Un lieu unique, propice à la détente et à la découverte</p>
                     <a href="#" class="btn">Contact</a>
                 </div>
@@ -100,7 +103,7 @@
     
     <footer>
         <div class="container disp">
-            <div>
+            <div on>
                 <small>&copy; Tous droits reservés</small>
             </div>
             <div>
@@ -112,6 +115,32 @@
         </div>
     </footer>
 
+    <script>
+        const add = document.querySelector('.nav')
+
+        icons.addEventListener("click", ()=> {
+            nav.classList.toggle("nav-links-aff")
+        })
+        icon.addEventListener("click", ()=> {
+            nav.classList.toggle("nav-links-aff")
+        })
+        icons.addEventListener("click", ()=> {
+            ul.classList.toggle("act")
+        })
+        icon.addEventListener("click", ()=> {
+            ul.classList.toggle("act")
+        })
+        function defil(){
+            if (scrollY > 0) {
+                
+                add.style.backgroundColor = "rgba(0, 0, 0, 0.7)"
+            } else{
+                add.style.backgroundColor = "transparent"
+                add.style.transition = ".4s"
+            }
+            
+        }
+    </script>
 
     
 </body>

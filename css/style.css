@@ -27,7 +27,7 @@ header{
 .container{
     padding: 1rem 7rem;
     width: 100%;
-    height: 15%;
+    height: 10%;
 }
 
 .nav{
@@ -35,7 +35,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed; */
+    position: fixed;
+}
+
+.nav a.btn{
+    display: none;
 }
 
 a{
@@ -71,8 +75,10 @@ ul{
 }
 
 h1{
+    margin-top: 9rem;
     font-size: 3rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 a.btn{
@@ -123,7 +129,8 @@ p{
 .box{
     width: 300px;
     height: 300px;
-    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.342)), url(../img/342389250_1881067065584535_430459689802042053_n.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.342)), url(../img/téléchargement\ \(14\).jpeg);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,6 +229,8 @@ section.contact .container_contact{
     /* margin-top: 3rem; */
     font-size: 3rem;
     color: red;
+    display: inline-block;
+    transform: translateY(10px);
 }
  
 input, textarea{
